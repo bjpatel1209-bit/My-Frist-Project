@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+<div class="container">
+    
+    <!-- Login Box -->
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form onsubmit="return validateLogin()">
+            <input type="text" placeholder="Username" required>
+            <input type="number" id="age" placeholder="Age" required>
+           <input type="tel" placeholder="Mobile no" pattern="[0-9]{10}" maxlength="10"
+            oninput="this.value = this.value.replace(/[^0-9]/g,'').slice(0,10)" required>
+            <input type="password" placeholder="Password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Blood Donation Text -->
+    <div class="info-box">
+        <h2>🩸 Blood Donation</h2>
+        <p>
+            Blood donation is a noble act that saves lives. 
+            One unit of blood can save up to three lives.
+        </p>
+
+        <ul>
+            <li>Donate Blood, Save Lives</li><br>
+            <li>Be a Hero, Donate Blood</li><br>
+            <li>A Drop of Blood Can Save a Life</li><br>
+            <li>Your Blood Can Give Someone Tomorrow</li><br>
+            <li>Blood Donation Costs Nothing, But Means Everything</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

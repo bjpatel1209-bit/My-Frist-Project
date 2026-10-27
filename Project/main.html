@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Donation | Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h2>🩸 Blood Donation System</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- WELCOME -->
+<h1 class="welcome-text">Welcome, User 👋</h1>
+
+<!-- DASHBOARD -->
+<div class="container">
+
+    <div class="card card1">
+        <h3>Register as Donor</h3>
+        <p>Become a blood donor and help save lives.</p>
+        <button onclick="goTo('register.html')">Register</button>
+    </div>
+
+    <div class="card card2">
+        <h3>Search Blood</h3>
+        <p>Find available blood groups quickly.</p>
+        <button onclick="goTo('search.html')">Search</button>
+    </div>
+
+    <div class="card card3">
+        <h3>Request Blood</h3>
+        <p>Request blood in case of emergency.</p>
+        <button onclick="goTo('request.html')">Request</button>
+    </div>
+
+</div>
+
+<!-- INFO SECTION -->
+<div class="info-section">
+    <h2>Why Donate Blood?</h2>
+    <p>
+        Blood donation is a noble act that saves millions of lives every year.
+        One unit of blood can save up to three lives.
+    </p>
+
+    <ul>
+        <li>Safe and simple process</li>
+        <li>No cost, only care</li>
+        <li>Helps patients in emergencies</li>
+    </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>© 2026 Blood Donation Management System</p>
+</div>
+
+<script>
+function logout() {
+    window.location.href = "login.html";
+}
+
+function goTo(page) {
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

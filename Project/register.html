@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Donor</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="form-card">
+    <h2>🩸 Donor Registration</h2>
+    <p>Become a hero by donating blood</p>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+
+        <select required>
+            <option value="">Select Blood Group</option>
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option>
+            <option>O+</option><option>O-</option>
+        </select>
+
+        <input type="tel" placeholder="Mobile Number"
+        pattern="[0-9]{10}" maxlength="10"
+        oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)" required>
+
+        <input type="text" placeholder="City" required>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+    <a href="main.html" class="back-link">← Back to Dashboard</a>
+</div>
+
+</body>
+</html>
